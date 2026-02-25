@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stilus.css">
+    <script src="kod.js"></script>
+</head>
+<body>
+	<div ID="kinalat">
+		<table>
+			<tr>
+				<th>Termék megnevezése</th>
+				<th>Termék képe</th>
+		
+			<tr class="termekek" onmouseover="nagyitKep()" onmouseout="visszaKep()" onclick="kivalaszt()">
+				<td>Kingston HyperX Predator 16GB DDR4</td>
+				<td><img src="RAM.jpg" class="kiskep"></td>
+			</tr>
+			<tr class="termekek" onmouseover="nagyitKep()" onmouseout="visszaKep()" onclick="kivalaszt()">
+				<td>LG 27MP59G-P Monitor</td>
+				<td><img src="monitor.jpg" class="kiskep"></td>
+			</tr>
+			<tr class="termekek" onmouseover="nagyitKep()" onmouseout="visszaKep()" onclick="kivalaszt()">
+				<td>Westers Digital Red 2TB</td>
+				<td><img src="HDD.jpg" class="kiskep"></td>
+			</tr>
+			<tr class="termekek" onmouseover="nagyitKep()" onmouseout="visszaKep()" onclick="kivalaszt()">
+				<td>Samsung 970 EVO 500GB</td>
+				<td><img src="SSD.jpg" class="kiskep"></td>
+			</tr>
+			<tr class="termekek" onmouseover="nagyitKep()" onmouseout="visszaKep()" onclick="kivalaszt()">
+				<td>Chieftec Smart 500W</td>
+				<td><img src="tap.jpg" class="kiskep"></td>
+			</tr>
+		</table>	
+	</div>
+
+	<div ID="kep">
+		<img ID="nagykep" src="ures.jpg">
+	</div>
+
+	<div ID="kosar">
+		<h2>Kosár tartalma:</h2>
+		<div id="kosarLista"></div>
+	</div>	
+</body>
+</html>
