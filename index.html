@@ -11,26 +11,46 @@
 			<tr>
 				<th>Termék megnevezése</th>
 				<th>Termék képe</th>
+				<th>Termék ára (Ft)</th>
+				<th>Mennyiség</th>
+				<th>Egységár (Ft)</th>
+			
+			
 		
-			<tr class="termekek" onmouseover="nagyitKep()" onmouseout="visszaKep()" onclick="kivalaszt('Kingston HyperX Predator 16GB DDR4')">
-				<td>Kingston HyperX Predator 16GB DDR4</td>
+			<tr onmouseover="nagyitKep('RAM.jpg')" onmouseout="visszaKep()" onclick="kivalaszt('Kingston HyperX Predator 16GB DDR4')" //>
+				<td class="termekek" >Kingston HyperX Predator 16GB DDR4</td>
 				<td><img src="RAM.jpg" class="kiskep"></td>
+				<td id="termekAra1">59491</td>
+				<td > <input type="number" oninput="arakSzamitas()"id="mennyiseg1"  min="0"></td>
+				<td id="egysegAr1">0</td>
 			</tr>
-			<tr class="termekek" onmouseover="nagyitKep()" onmouseout="visszaKep()" onclick="kivalaszt('LG 27MP59G-P Monitor')">
-				<td>LG 27MP59G-P Monitor</td>
+			<tr onmouseover="nagyitKep('monitor.jpg')" onmouseout="visszaKep()" onclick="kivalaszt('LG 27MP59G-P Monitor')">
+				<td class="termekek">LG 27MP59G-P Monitor</td>
 				<td><img src="monitor.jpg" class="kiskep"></td>
+				<td id="termekAra2">49000</td>
+				<td > <input type="number" oninput="arakSzamitas()"id="mennyiseg2"  min="0"></td>
+				<td id="egysegAr2"></td>
 			</tr>
-			<tr class="termekek" onmouseover="nagyitKep()" onmouseout="visszaKep()" onclick="kivalaszt('Westers Digital Red 2TB')">
-				<td>Westers Digital Red 2TB</td>
+			<tr  onmouseover="nagyitKep('HDD.jpg')" onmouseout="visszaKep()" onclick="kivalaszt('Westers Digital Red 2TB')">
+				<td class="termekek">Westers Digital Red 2TB</td>
 				<td><img src="HDD.jpg" class="kiskep"></td>
+				<td id="termekAra3">42705</td>
+				<td > <input type="number" oninput="arakSzamitas()"id="mennyiseg3"  min="0"></td>
+				<td id="egysegAr3"></td>
 			</tr>
-			<tr class="termekek" onmouseover="nagyitKep()" onmouseout="visszaKep()" onclick="kivalaszt('Samsung 970 EVO 500GB')">
-				<td>Samsung 970 EVO 500GB</td>
+			<tr  onmouseover="nagyitKep('SSD.jpg')" onmouseout="visszaKep()" onclick="kivalaszt('Samsung 970 EVO 500GB')">
+				<td class="termekek">Samsung 970 EVO 500GB</td>
 				<td><img src="SSD.jpg" class="kiskep"></td>
+				<td id="termekAra4">39990</td>
+				<td > <input type="number" oninput="arakSzamitas()"id="mennyiseg4"  min="0"></td>
+				<td id="egysegAr4"></td>
 			</tr>
-			<tr class="termekek" onmouseover="nagyitKep()" onmouseout="visszaKep()" onclick="kivalaszt('Chieftec Smart 500W')">
-				<td>Chieftec Smart 500W</td>
+			<tr  onmouseover="nagyitKep('tap.jpg')" onmouseout="visszaKep()" onclick="kivalaszt('Chieftec Smart 500W')">
+				<td class="termekek">Chieftec Smart 500W</td>
 				<td><img src="tap.jpg" class="kiskep"></td>
+				<td id="termekAra5">18410</td>
+				<td ><input type="number" oninput="arakSzamitas()"id="mennyiseg5" min="0" ></td>
+				<td id="egysegAr5"></td>
 			</tr>
 		</table>	
 	</div>
@@ -40,7 +60,7 @@
 	</div>
 
 	<div ID="kosar">
-		<h2>Kosár tartalma:</h2>
+		<h2>Végösszeg:</h2>
 		<div id="kosarLista"></div>
 	</div>	
 </body>
